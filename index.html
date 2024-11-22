@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg" href="./assets/id-card-line.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guillaume Porez - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="theme.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="logo dev">
+                </div>
+                <div class="burger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+                <video autoplay muted loop id="hero-video">
+                    <source src="./assets/devjob.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-content">
+                    <h1>Guillaume Porez</h1>
+                    <p class="subtitle">Software Engineer | Tech Innovator</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/guillaume-porez-pro"><img src="./assets/linkedin-box-line.svg" width="50px"
+                                alt="logo linkedin"></a>
+                        <a href="https://github.com/GuillaumePOREZ72"><img src="./assets/github-line.svg" width="50px" alt="logo github"></a>
+                        <a href="https://x.com/GuillaumePorez"><img src="./assets/twitter-x-fill.svg" width="50px" alt="logo twitter"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="profile-image">
+                        <img src="./assets/portrait.png" width="200px" alt="Guillaume Porez">
+                    </div>
+                    <div class="about-text">
+                        <p>Hello! I'm Guillaume, a passionate software engineer with a keen interest in innovative technology solutions. I love building elegant, efficient software that makes a difference.</p>
+                        <div class="skills">
+                            <h3>Skills</h3>
+                            <ul>
+                                <li>Software Development</li>
+                                <li>Back-End Development</li>
+                                <li>Front-End Development</li>
+                                <li>Web Technologies</li>
+                                <li>Cloud Computing</li>
+                                <li>Machine Learning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects">
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Project 1</h3>
+                        <p>Description of an innovative project I've worked on.</p>
+                        <a href="" class="btn">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project 2</h3>
+                        <p>Another exciting project showcasing my skills.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project 3</h3>
+                        <p>A unique solution to a challenging problem.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact">
+                <h2>Contact me !</h2>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="form-btn">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="current-month"></span> <span id="current-year"></span> Guillaume Porez. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
